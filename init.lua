@@ -21,7 +21,7 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained",
+  ensure_installed = { "bash", "javascript", "typescript", "go", "lua", "python" },
   highlight = {
     enable = true,
   },
