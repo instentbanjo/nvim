@@ -4,6 +4,10 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
+        "typescript-language-server",
+        "eslint-lsp",
+        "prettier",
+        "js-debug-adapter"
       },
     },
   },
@@ -31,7 +35,7 @@ local plugins = {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = "go",
+    event = "VeryLazy",
     opts = function()
       return require "custom.configs.null-ls"
     end,
