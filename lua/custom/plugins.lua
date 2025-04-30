@@ -7,7 +7,8 @@ local plugins = {
         "typescript-language-server",
         "eslint-lsp",
         "prettier",
-        "js-debug-adapter"
+        "js-debug-adapter",
+        "csharp_ls"
       },
     },
   },

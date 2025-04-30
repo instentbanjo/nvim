@@ -22,6 +22,12 @@ lspconfig.gopls.setup {
   },
 }
 
+lspconfig.csharp_ls.setup({
+  capabilities = capabilities, 
+  on_attach = on_attach,
+  filetypes = {"cs"}
+})
+
 local function organize_imports()
   local params = {
     command = "_typescript.organize_imports",
