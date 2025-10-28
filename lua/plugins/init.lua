@@ -227,6 +227,11 @@ local default_plugins = {
       end
     end,
   },
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5',
+    lazy=false,
+  },
 
   -- Only load whichkey after all the gui
   {
