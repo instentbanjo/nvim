@@ -303,6 +303,12 @@ M.nvterm = {
       end,
       "Toggle floating term",
     },
+    ["í"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "Toggle floating term",
+    },
 
     ["<A-h>"] = {
       function()
@@ -322,6 +328,12 @@ M.nvterm = {
   n = {
     -- toggle in normal mode
     ["<A-i>"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "Toggle floating term",
+    },
+    ["í"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
