@@ -116,7 +116,14 @@ local default_plugins = {
       vim.g.mason_binaries_list = opts.ensure_installed
     end,
   },
-
+  {
+      "mason-org/mason-lspconfig.nvim",
+      opts = {},
+      dependencies = {
+          { "mason-org/mason.nvim", opts = {} },
+          "neovim/nvim-lspconfig",
+      },
+  },
   {
     "neovim/nvim-lspconfig",
     event = "User FilePost",
